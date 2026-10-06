@@ -38,7 +38,7 @@ jobs:
         ssh-private-key: ${{ secrets.SERVER_SSH_KEY}}
 
     - name: 서버연결시 지문등록
-      run: ssh-keyscan -t ed25519 3.89.2.93 >> ~/.ssh/known_hosts/
+      run: ssh-keyscan -t ed25519 3.89.2.93 >> ~/.ssh/known_hosts
 
     - name: 개인키파일 확인
       run: | 
