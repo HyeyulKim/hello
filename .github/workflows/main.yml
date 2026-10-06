@@ -40,7 +40,10 @@ jobs:
     - name: 서버연결시 지문등록
       run: ssh-keyscan -t ed25519 3.89.2.93 >> ~/.ssh/known_hosts
 
-    - name: 개인키파일 확인
-      run: | 
-        cat ~/.ssh/id_rsa
-        cat ~/.ssh/known_hosts
+#    - name: 개인키파일 확인
+#      run: | 
+#        cat ~/.ssh/id_rsa
+#        cat ~/.ssh/known_hosts
+
+    - name: 운영서버에 배포 진행
+      run: scp target/hello-1.0.0.war ubuntu@3.89.2.93:~/ROOT.war
