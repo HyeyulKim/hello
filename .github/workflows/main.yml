@@ -17,10 +17,10 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '17'
+          java-version: '8'
           cache: maven
 
-      - name: Build
+      - name: Build war
         run: mvn clean package -DskipTests
 
       - name: Docker Hub login
