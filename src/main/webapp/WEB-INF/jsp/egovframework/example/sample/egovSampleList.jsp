@@ -60,7 +60,7 @@
 <body style="text-align:center; margin:0 auto; display:inline; padding-top:100px;">
     <form:form modelAttribute="searchVO" id="listForm" name="listForm" method="post">
         <input type="hidden" name="selectedId" />
-        화면 수정
+        확인용 화면 수정
         <div id="content_pop">
         	<!-- 타이틀 -->
         	<div id="title">
